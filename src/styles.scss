@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Exemple de class custom tailwind : */
+
+@layer components {
+  .default-button {
+    @apply rounded-full bg-primary-green-900 border border-primary-green-900 text-white py-4 px-5 m-1 font-bold
+  }
+}
