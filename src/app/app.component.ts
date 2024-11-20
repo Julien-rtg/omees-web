@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faMobile } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +21,6 @@ export class AppComponent {
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
   faYoutube = faYoutube;
+  faMobile = faMobile;
+  faUser = faUser;
 }
