@@ -14,3 +14,13 @@ swiper-container::part(button-prev) {
 :host {
     --swiper-navigation-color: white;
 }
+
+.text-slide {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+
+swiper-slide img {
+    width: 100%;
+}
