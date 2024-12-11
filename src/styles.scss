@@ -16,6 +16,6 @@
     @apply rounded-full bg-primary-green-900 border border-primary-green-900 text-white py-4 px-5 m-1 font-bold
   }
   .default-input {
-    @apply border bg-primary-pink-700 rounded-md pl-2
+    @apply border bg-white rounded-md pl-2 min-w-96 
   }
 }

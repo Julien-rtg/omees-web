@@ -1,22 +1,22 @@
 <app-navbar></app-navbar>
 <p>contact works!</p>
 <div class="p-4 h-[4000px]">
-    <form action="/contact" method="post">
-        <label for="raison du contact" aria-required="true">Choisissez votre motif :</label>
+    <form class= "p-3 w-fit rounded-2xl bg-primary-green-900" action="/contact" method="post">
+        <label for="raison du contact" aria-required="true"></label>
         <select id="contact" name="contact" class="default-input">
-            <option value="">--Sélectionner--</option>
+            <option value="">--Sélectionner un motif--</option>
             <option value="FR">France</option>
             <option value="BE">Belgique</option>
             <option value="CH">Suisse</option>
         </select>
         <label for="name"></label>
-        <input type="name" class="default-input" id="name" name="name" required placeholder="Nom">
-        <label for="mail"></label>
-        <input type="mail" class="default-input" name="email" required placeholder="Mail">
+        <input type="text" class="default-input" id="name" name="name" required placeholder="Nom" maxlenght="30">
+        <label for="email"></label>
+        <input type="email" class="default-input" name="email" required placeholder="Mail">
         <label for="problems"></label>
-        <input type="number" class="default-input" name="phone" required placeholder="Phone">
+        <input type="tel" class="default-input" name="phone" required placeholder="Phone" maxlength="12">
         <label for="phone"></label>
-        <textarea class="default-input"></textarea>
+        <textarea class="default-input" maxlength="64"></textarea>
         <button class="default-button">Envoyer</button>
     </form>
 </div>
