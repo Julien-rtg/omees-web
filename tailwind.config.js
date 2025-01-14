@@ -16,11 +16,11 @@ module.exports = {
       white: '#fff',
       'primary-pink': {
         900 : '#D9297F',
-        800 : '#E15499',
-        700 : '#E776AD',
-        600 : '#ED98C2',
-        500 : '#F3BBD6',
-        400 : '#F9DDEB',
+        800 : '#E54C8D',
+        700 : '#F16EA4',
+        600 : '#F48BB3',
+        500 : '#F6B1C2',
+        400 : '#F9C8D0',
       },
       'secondary-black': {
         900 : '#11030A',
