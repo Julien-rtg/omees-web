@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '../component/slider/slider.component';
-
+import { NavbarComponent } from '../component/common/navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SliderComponent],
+  imports: [NavbarComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

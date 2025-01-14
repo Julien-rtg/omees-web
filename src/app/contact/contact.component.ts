@@ -1,11 +1,10 @@
-import {Component} from '@angular/core';
-import {NgOptimizedImage} from '@angular/common';
+import { Component } from '@angular/core';
+import { NavbarComponent } from '../component/common/navbar/navbar.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [
-  ],
+  imports: [NavbarComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

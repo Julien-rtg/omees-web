@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,5 +14,8 @@
 @layer components {
   .default-button {
     @apply rounded-full bg-primary-green-900 border border-primary-green-900 text-white py-4 px-5 m-1 font-bold
+  }
+  .default-input {
+    @apply border bg-white rounded-md pl-2 min-w-96 
   }
 }
