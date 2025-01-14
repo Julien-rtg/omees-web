@@ -18,4 +18,7 @@
   .default-input {
     @apply border bg-white rounded-md pl-2 min-w-96 
   }
+  .button-dark {
+    @apply rounded-full bg-secondary-black-800 border border-secondary-black-800 text-white py-4 px-5 m-1 font-bold
+  }
 }
