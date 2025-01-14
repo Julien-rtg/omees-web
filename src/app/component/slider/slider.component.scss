@@ -1,0 +1,26 @@
+swiper-container::part(button-next),
+swiper-container::part(button-prev) {
+    background-color: #053B38;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+
+:host {
+    --swiper-navigation-color: white;
+}
+
+.text-slide {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+
+swiper-slide img {
+    width: 100%;
+}
