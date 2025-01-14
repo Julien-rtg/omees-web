@@ -13,7 +13,7 @@
 
 @layer components {
   .default-button {
-    @apply rounded-full bg-primary-pink-900 border border-primary-pink-900 text-white py-4 px-5 m-1 font-bold
+    @apply rounded-full bg-primary-pink-900 border border-secondary-black-900 text-white py-4 px-5 m-1 font-bold
   }
   .default-input {
     @apply border bg-white rounded-md pl-2 min-w-96 
