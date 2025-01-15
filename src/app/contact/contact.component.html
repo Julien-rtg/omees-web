@@ -1,12 +1,14 @@
 <p>contact works!</p>
-<div class="p-4 h-[4000px]">
-    <form class= "p-3 w-fit rounded-2xl bg-primary-green-900" action="/contact" method="post">
+<div class="p-4">
+    <form class= "p-3 w-fit rounded-2xl bg-primary-pink-700" action="/contact" method="post">
         <label for="raison du contact" aria-required="true"></label>
         <select id="contact" name="contact" class="default-input">
-            <option value="">--Sélectionner un motif--</option>
-            <option value="FR">France</option>
-            <option value="BE">Belgique</option>
-            <option value="CH">Suisse</option>
+            <option value="">J'ai un problème avec...</option>
+            <option value="1">Un trajet terminé</option>
+            <option value="2">Un trajet non effectué</option>
+            <option value="3">Mon compte</option>
+            <option value="4">A propos de l'application</option>
+            <option value="5">Concernant un paiement</option>
         </select>
         <label for="name"></label>
         <input type="text" class="default-input" id="name" name="name" required placeholder="Nom" maxlenght="30">
@@ -15,7 +17,7 @@
         <label for="problems"></label>
         <input type="tel" class="default-input" name="phone" required placeholder="Phone" maxlength="12">
         <label for="phone"></label>
-        <textarea class="default-input" maxlength="64"></textarea>
+        <textarea class="default-input h-32" maxlength="64"></textarea>
         <button class="default-button">Envoyer</button>
     </form>
 </div>

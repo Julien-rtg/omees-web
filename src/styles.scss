@@ -13,12 +13,12 @@
 
 @layer components {
   .default-button {
-    @apply rounded-full bg-primary-pink-900 border border-secondary-black-900 text-white py-4 px-5 m-1 font-bold
+    @apply rounded-full bg-primary-pink-900 border border-secondary-black-900 text-white py-4 px-5 m-1 font-bold font-filson-pro
   }
   .default-input {
-    @apply border bg-white rounded-md pl-2 min-w-96 
+    @apply border bg-white rounded-md pl-2 min-w-96 font-poppins-thin
   }
   .button-dark {
-    @apply rounded-full bg-secondary-black-800 border border-secondary-black-800 text-white py-4 px-5 m-1 font-bold
+    @apply rounded-full bg-secondary-black-800 border border-secondary-black-800 text-white py-4 px-5 m-1 font-bold font-filson-pro
   }
 }

@@ -4,12 +4,13 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+    fontFamily: {
+      'filson-pro': ['Filson Pro', 'sans-serif'],
+      'poppins': ['Poppins', 'semi-bold'],
+      'poppins-thin': ['Poppins', 'sans-serif'],
+    },
     colors: {
       extend: {
-        fontFamily: {
-          'lemon-milk': ['Lemon Milk', 'sans-serif'],
-          'poppins': ['Poppins', 'sans-serif'],
-        },
       },
       transparent: 'transparent',
       black: '#000',
