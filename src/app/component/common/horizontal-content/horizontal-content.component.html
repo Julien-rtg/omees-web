@@ -1,4 +1,4 @@
-<div class=" bg-primary-pink-500 flex" [ngStyle]="isImageRight?{'flex-direction': 'row-reverse'} : {'flex-direction': 'row'}">
+<div class=" bg-primary-pink-500 flex" [ngStyle]="isImageRight?{'flex-direction': 'row-reverse'} : {'flex-direction': 'row'}" [ngClass]="{'m-[6vw] rounded-2xl': isCropped}" >
     <div class="w-1/2 overflow-hidden">
         <img [src]="image" alt="Chauffeuse" class="w-full h-full object-cover object-center">
     </div>

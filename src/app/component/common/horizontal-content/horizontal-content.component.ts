@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { NgStyle } from '@angular/common';
+import { NgStyle, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-horizontal-content',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, NgClass],
   templateUrl: './horizontal-content.component.html',
   styleUrl: './horizontal-content.component.scss'
 })
@@ -13,4 +13,5 @@ export class HorizontalContentComponent {
   @Input() content = ""
   @Input() image = ""
   @Input() isImageRight = true
+  @Input() isCropped = false
 }
