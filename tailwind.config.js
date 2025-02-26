@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'filson-pro': ['Filson Pro', 'sans-serif'],
+      'filson-pro': ['Filson Pro', 'black'],
       'poppins': ['Poppins', 'semi-bold'],
       'poppins-thin': ['Poppins', 'sans-serif'],
     },

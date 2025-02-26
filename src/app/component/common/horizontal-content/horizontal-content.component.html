@@ -1,1 +1,10 @@
-<p>horizontal-content works!</p>
+<div class=" bg-primary-pink-500 flex" [ngStyle]="isImageRight?{'flex-direction': 'row-reverse'} : {'flex-direction': 'row'}">
+    <div class="w-1/2 overflow-hidden">
+        <img [src]="image" alt="Chauffeuse" class="w-full h-full object-cover object-center">
+    </div>
+    <div class="w-1/2 content-center">
+        <h2 class="flex p-4 font-filson-pro font-black text-4xl">{{title}}</h2>
+        <p class="flex p-4 font-poppins text-xl">{{content}}</p>
+        <button class="m-4 border-2 border-l-secondary-yellow-900 text-secondary-yellow-900 px-6 py-2 rounded-3xl font-extrabold hover:bg-secondary-yellow-900 hover:text-white transition">En savoir plus</button>
+    </div>
+</div>
