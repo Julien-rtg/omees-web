@@ -16,9 +16,12 @@
     @apply rounded-full bg-primary-pink-900 border border-secondary-black-900 text-white py-4 px-5 m-1 font-bold hover:shadow-md active:translate-y-0.5 transition-all duration-150
   }
   
-  
   .default-button-services {
     @apply bg-white text-secondary-black-800 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors
+  }
+
+  .button-horizontal {
+    @apply bg-transparent border border-white border-2 text-white px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors
   }
 
   .default-button-home {
@@ -28,6 +31,7 @@
   .default-button-no-border {
     @apply rounded-full bg-primary-pink-900 text-white py-4 px-5 m-1 font-bold
   }
+  
   .default-input {
     @apply border border-secondary-black-400 bg-white rounded-lg py-3 pl-4 pr-2 w-full text-secondary-black-900 outline-none shadow-sm
   }
