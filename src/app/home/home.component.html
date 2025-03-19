@@ -23,28 +23,30 @@
 <div class="illustration-container bg-primary-pink-500 pt-10 md:pt-20 pb-10 md:pb-20">
     <div class="flex flex-col md:flex-row justify-center m-auto gap-6 items-center w-11/12 md:w-10/12">
         <!-- Download App Card -->
-        <div class="w-full md:w-5/12 p-6 md:p-8 bg-secondary-black-800 rounded-3xl flex flex-col">
-            <div class="mt-4 md:mt-8">
-                <h1 class="text-white font-semibold text-3xl md:text-4xl mb-4 md:mb-6">Téléchargez l'application <br class="hidden md:block"/> Omees !</h1>
+        <div class="w-full md:w-5/12 p-6 md:p-8 bg-secondary-black-800 rounded-3xl flex flex-col justify-between">
+            <div>
+                <div class="mt-4 md:mt-8">
+                    <h1 class="text-white font-semibold text-3xl md:text-4xl mb-4 md:mb-6">Téléchargez l'application <br class="hidden md:block"/> Omees !</h1>
+                </div>
             </div>
-            <div class="flex flex-row items-center">
+            <div class="flex flex-row items-center mt-auto">
                 <img class="w-24 md:w-32 rounded-3xl" src="\assets\img\qrcode.png" alt="qr-code">
                 <p class="text-white text-base md:text-lg pl-4 md:pl-8">Scannez le QR code pour télécharger</p>
             </div>
         </div>
 
         <!-- Newsletter Card -->
-        <div class="w-full md:w-5/12 p-6 md:p-8 flex flex-col bg-white rounded-3xl">
-            <div class="mt-4 md:mt-8">
-                <h1 class="text-secondary-black-800 font-semibold text-3xl md:text-4xl mb-4 md:mb-6">Retrouvez toute notre actualité</h1>
-            </div>
-            <p class="text-secondary-black-800 mb-4 md:mb-6">Souscrivez à notre newsletter</p>
-            <div class="flex justify-center w-full md:w-3/4 relative">
-                <input type="email" placeholder="Adresse email"
-                    class="absolute input-focus rounded-full h-12 md:h-16 w-full bg-primary-pink-500 placeholder-white placeholder:font-semi-bold text-white pl-4">
-                <div class="flex w-full max-w-96 justify-end">
-                    <button class="button-dark z-10">Souscrivez</button>
+        <div class="w-full md:w-5/12 p-6 md:p-8 flex flex-col bg-white rounded-3xl justify-between">
+            <div>
+                <div class="mt-4 md:mt-8">
+                    <h1 class="text-secondary-black-800 font-semibold text-3xl md:text-4xl mb-4 md:mb-6">Retrouvez toute notre actualité</h1>
                 </div>
+                <p class="text-secondary-black-800 mb-4 md:mb-6">Souscrivez à notre newsletter</p>
+            </div>
+            <div class="relative w-full mt-auto">
+                <input type="email" placeholder="Adresse email"
+                    class="input-focus rounded-full h-12 md:h-16 w-full bg-primary-pink-500 placeholder-white placeholder:font-semi-bold text-white pl-4 pr-24 md:pr-32">
+                <button class="absolute right-0 top-1/2 mr-1 transform -translate-y-1/2 rounded-full bg-secondary-black-800 border border-secondary-black-800 text-white py-2 md:py-4 px-3 md:px-5 text-sm md:text-base font-bold">Souscrivez</button>
             </div>
         </div>
     </div>
