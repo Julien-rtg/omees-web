@@ -2,3 +2,11 @@
     background-image: url('/assets/img/illustration.png');
     background-size: cover;
 }
+
+.input-focus {    
+    &:focus {
+        border-color: transparent;
+        outline: none;
+        box-shadow: 0 0 0 0;
+    }
+}
