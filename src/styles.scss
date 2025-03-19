@@ -15,6 +15,14 @@
   .default-button {
     @apply rounded-full bg-primary-pink-900 border border-secondary-black-900 text-white py-4 px-5 m-1 font-bold
   }
+  
+  .default-button-services {
+    @apply bg-white text-secondary-black-800 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors
+  }
+
+  .default-button-home {
+    @apply rounded-full border-2 border-secondary-black-900 text-secondary-black-900 font-bold py-2 px-6
+  }
 
   .default-button-no-border {
     @apply rounded-full bg-primary-pink-900 text-white py-4 px-5 m-1 font-bold
