@@ -1,10 +1,12 @@
-<div class=" bg-primary-pink-500 flex" [ngStyle]="isImageRight?{'flex-direction': 'row-reverse'} : {'flex-direction': 'row'}" [ngClass]="{'m-[6vw] rounded-2xl': isCropped}" >
-    <div class="w-1/2 overflow-hidden">
+<div class="bg-primary-pink-500 flex" 
+     [ngStyle]="{'flex-direction': getFlexDirection()}" 
+     [ngClass]="{'m-4 md:m-[6vw] rounded-2xl': isCropped}">
+    <div class="w-full md:w-1/2 overflow-hidden">
         <img [src]="image" alt="Chauffeuse" class="w-full h-full object-cover object-center">
     </div>
-    <div class="w-1/2 content-center">
-        <h2 class="flex p-4 font-filson-pro font-black text-4xl">{{title}}</h2>
-        <p class="flex p-4 font-poppins text-xl">{{content}}</p>
-        <button class="m-4 border-2 border-l-secondary-yellow-900 text-secondary-yellow-900 px-6 py-2 rounded-3xl font-extrabold hover:bg-secondary-yellow-900 hover:text-white transition">En savoir plus</button>
+    <div class="w-full md:w-1/2 p-6 md:p-8 content-center">
+        <h2 class="font-black text-2xl md:text-3xl lg:text-4xl mb-4">{{title}}</h2>
+        <p class="text-base md:text-lg lg:text-xl mb-6">{{content}}</p>
+        <button class="border-2 border-l-secondary-yellow-900 text-secondary-yellow-900 px-4 md:px-6 py-2 rounded-3xl font-extrabold hover:bg-secondary-yellow-900 hover:text-white transition">En savoir plus</button>
     </div>
 </div>
