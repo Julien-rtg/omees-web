@@ -48,6 +48,9 @@ module.exports = {
         400 : '#FFF9D6',
       }
     },
+    backgroundImage: {
+      'home-top': "url('/assets/img/img_accueil_omees.png')"
+    }
   },
   plugins: [],
 }
