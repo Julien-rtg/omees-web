@@ -11,51 +11,53 @@
                 </h2>
             </div>
 
-            <form class="p-6 md:p-8 space-y-6" action="/contact" method="post">
+            <form class="p-6 md:p-8 space-y-6">
                 <div class="space-y-1">
-                    <label for="contact" class="form-label">Raison du contact</label>
-                    <select id="contact" name="contact"
+                    <label for="contact" class="form-label">Raison du contact *</label>
+                    <select id="contact" name="contact" required
                         class="default-input transition-all focus:ring-2 focus:ring-primary-pink-700">
                         <option value="">J'ai un problème avec...</option>
-                        <option value="1">Un trajet terminé</option>
-                        <option value="2">Un trajet non effectué</option>
-                        <option value="3">Mon compte</option>
-                        <option value="4">À propos de l'application</option>
-                        <option value="5">Concernant un paiement</option>
+                        <option *ngFor="let subject of subjects" [value]="subject.id">{{subject.label}}</option>
                     </select>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="space-y-1">
-                        <label for="name" class="form-label">Nom</label>
+                        <label for="lastname" class="form-label">Nom *</label>
                         <input type="text" class="default-input transition-all focus:ring-2 focus:ring-primary-pink-700"
-                            id="name" name="name" required placeholder="Votre nom" maxlength="30">
+                            id="lastname" name="lastname" required placeholder="Votre nom" maxlength="80">
                     </div>
 
                     <div class="space-y-1">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email"
-                            class="default-input transition-all focus:ring-2 focus:ring-primary-pink-700" id="email"
-                            name="email" required placeholder="Votre adresse email">
+                        <label for="name" class="form-label">Prénom *</label>
+                        <input type="text" class="default-input transition-all focus:ring-2 focus:ring-primary-pink-700"
+                            id="name" name="name" required placeholder="Votre prénom" maxlength="50">
                     </div>
+                </div>
+
+                <div class="space-y-1">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="default-input transition-all focus:ring-2 focus:ring-primary-pink-700"
+                        id="email" name="email" required placeholder="Votre adresse email">
                 </div>
 
                 <div class="space-y-1">
                     <label for="phone" class="form-label">Téléphone</label>
                     <input type="tel" class="default-input transition-all focus:ring-2 focus:ring-primary-pink-700"
-                        id="phone" name="phone" required placeholder="Votre numéro de téléphone" maxlength="12">
+                        id="phone" name="phone" placeholder="Votre numéro de téléphone" maxlength="12">
                 </div>
 
                 <div class="space-y-1">
-                    <label for="message" class="form-label">Message</label>
+                    <label for="message" class="form-label">Message *</label>
                     <textarea id="message" name="message"
                         class="default-input h-32 transition-all focus:ring-2 focus:ring-primary-pink-700"
                         placeholder="Décrivez votre problème en détail..." maxlength="500"></textarea>
                 </div>
 
                 <div class="pt-4">
-                    <button type="submit"
-                        class="default-button py-2 border-none hover:bg-primary-pink-800 transition-colors w-full md:w-auto">
+                    <button type="button"
+                        class="default-button py-2 border-none hover:bg-primary-pink-800 transition-colors w-full md:w-auto"
+                        (click)="sendEmail()">
                         Envoyer
                     </button>
                 </div>
