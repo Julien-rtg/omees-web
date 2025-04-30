@@ -1,12 +1,14 @@
-<div class="bg-primary-pink-900 flex" 
+<div class="bg-secondary-pink-900 flex" 
      [ngStyle]="{'flex-direction': getFlexDirection()}" 
      [ngClass]="{'m-4 md:m-[6vw] rounded-2xl': isCropped}">
     <div class="w-full md:w-1/2 overflow-hidden">
         <img [src]="image" alt="Chauffeuse" class="w-full h-full object-cover object-center">
     </div>
     <div class="w-full md:w-1/2 p-6 md:p-8 content-center">
-        <h2 class="text-white font-black text-2xl md:text-3xl lg:text-4xl mb-4">{{title}}</h2>
-        <p class="text-white text-base md:text-lg lg:text-xl mb-6">{{content}}</p>
-        <button class="button-horizontal">En savoir plus</button>
+        <h2 class="text-primary-pink-900 font-black text-2xl md:text-3xl lg:text-4xl mb-4 font-filson-pro">{{title}}</h2>
+        <p class="text-black text-base md:text-lg lg:text-xl mb-6 font-poppins">{{content}}</p>
+        <button class="button-horizontal font-poppins">{{content_button}}
+            <img src="/assets/icon/fleche.svg" alt="fleche redirection">
+        </button>
     </div>
 </div>

@@ -4,11 +4,13 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+    extend: {
     fontFamily: {
       'filson-pro': ['Filson Pro', 'black'],
       'poppins': ['Poppins', 'semi-bold'],
       'poppins-thin': ['Poppins', 'sans-serif'],
     },
+  },
     colors: {
       extend: {
       },
@@ -48,6 +50,9 @@ module.exports = {
         400 : '#FFF9D6',
       }
     },
+    backgroundImage: {
+      'home-top': "url('/assets/img/img_accueil_omees.png')"
+    }
   },
   plugins: [],
 }
