@@ -4,11 +4,13 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+    extend: {
     fontFamily: {
       'filson-pro': ['Filson Pro', 'black'],
       'poppins': ['Poppins', 'semi-bold'],
       'poppins-thin': ['Poppins', 'sans-serif'],
     },
+  },
     colors: {
       extend: {
       },
