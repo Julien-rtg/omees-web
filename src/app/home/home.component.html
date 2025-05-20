@@ -1,52 +1,29 @@
 <!-- Hero Section -->
-<div class="flex flex-col md:flex-row justify-center gap-4 items-center py-8 px-4">
-    <div class="w-full md:w-1/2 p-4 md:p-8 content-center">
-        <h1 class="text-primary-pink-900 font-black text-3xl md:text-4xl lg:text-5xl">Votre trajet en toute<span
-                class="text-secondary-yellow-900"> confiance</span>, à <span class="text-secondary-yellow-900"> chaque
-                instant</span>.</h1>
-        <p class="text-primary-pink-900 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, sunt omnis
-            aut est quo totam quaerat tenetur repudiandae ratione natus sit laboriosam fugit autem magni ipsum magnam
-            cupiditate asperiores non?</p>
-        <button class="default-button-no-border mt-6 md:mt-8">Téléchargez l'application</button>
-    </div>
-    <div class="w-full md:w-1/2 p-4 flex justify-center">
-        <img class="w-3/4 md:w-3/4 aspect-square" src="\assets\img\phone-container.png" alt="image-trajet">
-    </div>
+<div class="bg-home-top bg-no-repeat bg-cover bg-center min-h-[100vh] text-center font-bold content-center font-filson-pro">
+    <p class="text-white text-4xl">UN <span class="text-secondary-yellow-900">SERVICE DE VTC INCLUSIF</span> AVEC LA POSSIBILITE <br><span>DE PERSONNALISER SES TRAJETS !</span></p>
 </div>
 
 <!-- Horizontal Content Sections -->
-<app-horizontal-content title="Chauffeuse dédiée pour vos trajets, pour une sécurité et un service de qualité" content="Notre métier est avant tout un métier de relation. C'est pourquoi nous nous efforçons en toute circonstance d'être courtois, bienveillants et respectueux envers chacun de nos clients. Nous répondons avec soin à vos demandes de réservations, nous vous prenons en charge avec le sourire et nous nous assurons de votre confort durant votre transfert." image="/assets/img/driver-container.jpg" [isImageRight]="false"></app-horizontal-content>
-<app-horizontal-content title="Conduisez quand vous voulez, générez des revenus sur mesure" content="Générez des revenus selon votre propre emploi du temps en effectuant des livraisons, des courses, ou même les deux. Vous pouvez utiliser votre propre véhicule ou choisir une voiture de location via Uber." image="/assets/img/driver-container2.jpg"></app-horizontal-content>
+<app-horizontal-content title="Chauffeuse dédiée pour vos trajets, pour une sécurité et un service de qualité" content="Notre métier est avant tout un métier de relation. C'est pourquoi nous nous efforçons en toute circonstance d'être courtois, bienveillants et respectueux envers chacun de nos clients. Nous répondons avec soin à vos demandes de réservations, nous vous prenons en charge avec le sourire et nous nous assurons de votre confort durant votre transfert." image="/assets/img/containe_1.jpg" [isImageRight]="false" content_button="En savoir plus"></app-horizontal-content>
+<app-horizontal-content title="Conduisez quand vous voulez, générez des revenus sur mesure" content="Générez des revenus selon votre propre emploi du temps en effectuant des livraisons, des courses, ou même les deux. Vous pouvez utiliser votre propre véhicule ou choisir une voiture de location via Uber." image="/assets/img/container_2.jpg" content_button="S'inscrire"></app-horizontal-content>
 
-<!-- App Download & Newsletter Section -->
+<!-- Phone case & Download part -->
 <div class="bg-primary-pink-900">
 <div class="illustration-container bg-primary-pink-900 pt-10 md:pt-20 pb-10 md:pb-20">
     <div class="flex flex-col md:flex-row justify-center m-auto gap-6 items-center w-11/12 md:w-10/12">
-        <!-- Download App Card -->
-        <div class="w-full md:w-5/12 p-6 md:p-8 bg-secondary-black-800 rounded-3xl flex flex-col justify-between">
-            <div>
-                <div class="mt-4 md:mt-8">
-                    <h1 class="text-white font-semibold text-3xl md:text-4xl mb-4 md:mb-6">Téléchargez l'application <br class="hidden md:block"/> Omees !</h1>
-                </div>
-            </div>
-            <div class="flex flex-row items-center mt-auto">
-                <img class="w-24 md:w-32 rounded-3xl" src="\assets\img\qrcode.png" alt="qr-code">
-                <p class="text-white text-base md:text-lg pl-4 md:pl-8">Scannez le QR code pour télécharger</p>
-            </div>
+        <!--  Phone case -->
+        <div class="w-1/2 md:w-5/12 p-6 md:p-8 rounded-3xl flex flex-col justify-between">
+            <img src="/assets/img/mobile_download.svg" alt="phone container" class="h-96">
         </div>
 
-        <!-- Newsletter Card -->
-        <div class="w-full md:w-5/12 p-6 md:p-8 flex flex-col bg-white rounded-3xl justify-between">
-            <div>
-                <div class="mt-4 md:mt-8">
-                    <h1 class="text-secondary-black-800 font-semibold text-3xl md:text-4xl mb-4 md:mb-6">Retrouvez toute notre actualité</h1>
-                </div>
-                <p class="text-secondary-black-800 mb-4 md:mb-6">Souscrivez à notre newsletter</p>
-            </div>
-            <div class="relative w-full mt-auto">
-                <input type="email" placeholder="Adresse email"
-                    class="input-focus rounded-full h-12 md:h-16 w-full bg-primary-pink-900 placeholder-white placeholder:font-semi-bold text-white pl-4 pr-24 md:pr-32">
-                <button class="absolute right-0 top-1/2 mr-1 transform -translate-y-1/2 rounded-full bg-secondary-black-800 border border-secondary-black-800 text-white py-2 md:py-4 px-3 md:px-5 text-sm md:text-base font-bold">Souscrivez</button>
+        <!-- Download part -->
+        <div class="w-1/2 text-white font-poppins">
+            <p class="text-secondary-yellow-900 font-semibold text-xl">Download our app</p>
+            <h3 class="font-semibold pt-5 pb-5 text-5xl font-filson-pro">Obtenez l'application OMEES pour .....</h3>
+            <p class="font-semibold pb-5 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate quam a egestas dictum.</p>
+            <div class="place-content-evenly flex space-x-10 text-black font-semibold">
+                <button class="bg-secondary-yellow-900 w-1/2 justify-center items-center rounded-full flex p-2 transition transform hover:-translate-y-1 hover:bg-yellow-900 hover:shadow-lg"><img src="/assets/icon/icon_apple.svg" alt="logo Apple Store" class="pr-3">App Store</button>
+                <button class="bg-secondary-yellow-900 w-1/2 justify-center items-center rounded-full flex transition transform hover:-translate-y-1 hover:bg-yellow-900 hover:shadow-lg"><img src="/assets/icon/icon_play.svg" alt="logo Play Store" class="pr-3">Play Store</button>
             </div>
         </div>
     </div>

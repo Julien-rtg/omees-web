@@ -14,6 +14,7 @@ export class HorizontalContentComponent implements OnInit {
   @Input() image = ""
   @Input() isImageRight = true
   @Input() isCropped = false
+  @Input() content_button = ""
   
   isMobile = false;
   
