@@ -13,8 +13,13 @@ export class HorizontalContentComponent implements OnInit {
   @Input() content = ""
   @Input() image = ""
   @Input() isImageRight = true
+  @Input() hasArrow = true
   @Input() isCropped = false
   @Input() content_button = ""
+  @Input() bg = ""
+  @Input() text = ""
+  @Input() colorTitle = ""
+  @Input() buttonType = ""
   
   isMobile = false;
   
@@ -33,4 +38,11 @@ export class HorizontalContentComponent implements OnInit {
     }
     return this.isImageRight ? 'row-reverse' : 'row';
   }
+
+  getArrowStyle() {
+  return {
+    display: this.hasArrow ? 'inline-block' : 'none'
+  };
+}
+
 }

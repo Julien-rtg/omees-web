@@ -17,11 +17,15 @@
   }
   
   .default-button-services {
-    @apply bg-white text-secondary-black-800 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors
+    @apply bg-secondary-yellow-900 text-secondary-black-800 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors
   }
 
   .button-horizontal {
     @apply bg-transparent bg-primary-pink-900 border-primary-pink-900 border-2 text-white px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors w-auto flex gap-20
+  }
+
+  .button-horizontal2 {
+    @apply bg-transparent bg-white border-2 text-black px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors w-auto flex gap-20
   }
 
   .default-button-home {
