@@ -1,6 +1,6 @@
-<div class="{{bg}} flex" 
+<div class="{{bg}} flex md:rounded-2xl" 
      [ngStyle]="{'flex-direction': getFlexDirection()}" 
-     [ngClass]="{'md:m-[6vw] rounded-2xl': isCropped}">
+     [ngClass]="{'md:m-[6vw]': isCropped}">
     <div class="w-full md:w-1/2 overflow-hidden">
         <img [src]="image" alt="Chauffeuse" class="w-full h-full object-cover object-center">
     </div>

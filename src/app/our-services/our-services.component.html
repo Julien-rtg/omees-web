@@ -1,49 +1,66 @@
-<div class="container mx-auto">
+<div>
     <!-- Title and Description -->
-    <div>
+    <div class="relative">
         <img src="/assets/img/voitures-services.png" alt="Voiture service" class="w-full h-auto block">
-        <h2 class="absolute inset-0 flex pt-36 pl-36 text-secondary-yellow-900 font-filson-pro font-black text-4xl h-fit">Parcourez Nos <br>Fonctionnalités<span class="text-primary-pink-900"><br>.</span></h2>
+        <h2 class="absolute top-0 left-0 text-secondary-yellow-900 font-filson-pro font-black text-2xl sm:text-3xl md:text-4xl p-4 sm:p-8 md:pt-16 lg:pt-36 md:pl-16 lg:pl-36">
+            Parcourez Nos <br>Fonctionnalités<span class="text-primary-pink-900"><br>.</span>
+        </h2>
     </div>
 
     <!-- Cards Container -->
-    <p class="pt-7 pb-7 text-white text-center items-center justify-center flex bg-primary-pink-900">Lorem ipsum dolor sit amet consectetur adipiscing elit semper<br>dalar elementum tempus hac tellus libero accumsan.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5 bg-primary-pink-900">
-        <!-- Application Utilisateurs Card -->
-        <div class="bg-white rounded-2xl p-8 text-black text-center transition-transform hover:scale-105">
-            <div class="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
-                <img class="rounded-full bg-primary-pink-900" src="assets/icon/user.svg" alt="Application Utilisateurs">
+    <div class="bg-primary-pink-900">
+        <p class="py-4 md:py-7 px-4 text-white text-center text-sm sm:text-base md:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit semper
+            <span class="hidden sm:inline"><br></span>dalar elementum tempus hac tellus libero accumsan.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-5">
+            <!-- Application Utilisateurs Card -->
+            <div class="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-black text-center transition-transform hover:scale-105">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 rounded-full flex items-center justify-center">
+                    <img class="rounded-full bg-primary-pink-900 p-3" src="assets/icon/user.svg" alt="Application Utilisateurs">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-8 md:mb-12 mt-4 sm:mt-8 md:mt-12 font-filson-pro">Application Utilisateurs</h3>
+                <p class="mb-6 sm:mb-8 md:mb-12 font-poppins text-sm sm:text-base">Lorem ipsum dolor sit amet consecte tur adipisicing elit semper daler elementum tempus hac.</p>
+                <button class="default-button-services">
+                    En savoir plus
+                </button>
             </div>
-            <h3 class="text-xl font-bold mb-12 mt-12 font-filson-pro">Application Utilisateurs</h3>
-            <p class="mb-12 font-poppins">Lorem ipsum dolor sit amet consecte tur adipisicing elit semper daler elementum tempus hac.</p>
-            <button class="default-button-services">
-                En savoir plus
-            </button>
-        </div>
 
-        <!-- Site Internet Card -->
-        <div class="bg-white rounded-2xl p-8 text-black text-center transition-transform hover:scale-105">
-            <div class="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
-                <img class="rounded-full bg-primary-pink-900" src="assets/icon/globe.svg" alt="Application Utilisateurs">
+            <!-- Site Internet Card -->
+            <div class="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-black text-center transition-transform hover:scale-105">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 rounded-full flex items-center justify-center">
+                    <img class="rounded-full bg-primary-pink-900 p-3" src="assets/icon/globe.svg" alt="Application Utilisateurs">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-8 md:mb-12 mt-4 sm:mt-8 md:mt-12 font-filson-pro">Site Internet</h3>
+                <p class="mb-6 sm:mb-8 md:mb-12 font-poppins text-sm sm:text-base">Lorem ipsum dolor sit amet consecte tur adipisicing elit semper daler elementum tempus hac.</p>
+                <button class="default-button-services">
+                    En savoir plus
+                </button>
             </div>
-            <h3 class="text-xl font-bold mb-12 mt-12 font-filson-pro">Site Internet</h3>
-            <p class="mb-12 font-poppins">Lorem ipsum dolor sit amet consecte tur adipisicing elit semper daler elementum tempus hac.</p>
-            <button class="default-button-services">
-                En savoir plus
-            </button>
-        </div>
 
-        <!-- Fonctionnalité Conductrices Card -->
-        <div class="bg-white rounded-2xl p-8 text-black text-center transition-transform hover:scale-105">
-            <div class="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
-                <img class="rounded-full bg-primary-pink-900" src="assets/icon/car.svg" alt="Fonctionnalité Conductrices">
+            <!-- Fonctionnalité Conductrices Card -->
+            <div class="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-black text-center transition-transform hover:scale-105 md:col-span-2 lg:col-span-1 md:max-w-md md:mx-auto lg:max-w-none">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 rounded-full flex items-center justify-center">
+                    <img class="rounded-full bg-primary-pink-900 p-3" src="assets/icon/car.svg" alt="Fonctionnalité Conductrices">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-8 md:mb-12 mt-4 sm:mt-8 md:mt-12 font-filson-pro">Fonctionnalité Conductrices</h3>
+                <p class="mb-6 sm:mb-8 md:mb-12 font-poppins text-sm sm:text-base">Lorem ipsum dolor sit amet consecte tur adipisicing elit semper daler elementum tempus hac.</p>
+                <button class="default-button-services">
+                    En savoir plus
+                </button>
             </div>
-            <h3 class="text-xl font-bold mb-12 mt-12 font-filson-pro">Fonctionnalité Conductrices</h3>
-            <p class="mb-12 font-poppins">Lorem ipsum dolor sit amet consecte tur adipisicing elit semper daler elementum tempus hac.</p>
-            <button class="default-button-services">
-                En savoir plus
-            </button>
         </div>
     </div>
 </div>
-<app-horizontal-content bg="bg-black" colorTitle="text-white" text="text-white" title="Commandez votre course dès aujourd'hui !" image="/assets/img/container6.jpg" content_button="Découvrez l'application" buttonType="button-horizontal2" [isImageRight]="false" [hasArrow]="false" [isCropped]="true" ></app-horizontal-content>
-<app-horizontal-content bg="bg-primary-pink-900" title="Conduisez avec l'application OMEES !" image="/assets/img/container7.jpg" content_button="Inscription" buttonType="button-horizontal2" [isImageRight]="true" [hasArrow]="false" [isCropped]="true" ></app-horizontal-content>
+
+<!-- Horizontal Content Sections -->
+<div class="mt-8 sm:mt-12 md:mt-16">
+    <app-horizontal-content bg="bg-black" colorTitle="text-white" text="text-white"
+        title="Commandez votre course dès aujourd'hui !" image="/assets/img/container6.jpg"
+        content_button="Découvrez l'application" buttonType="button-horizontal2" [isImageRight]="false" [hasArrow]="false"
+        [isCropped]="true"></app-horizontal-content>
+    <app-horizontal-content bg="bg-primary-pink-900" colorTitle="text-white" title="Conduisez avec l'application OMEES !"
+        image="/assets/img/container7.jpg" content_button="Inscription" buttonType="button-horizontal2"
+        [isImageRight]="true" [hasArrow]="false" [isCropped]="true"></app-horizontal-content>
+</div>
