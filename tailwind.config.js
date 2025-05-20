@@ -51,7 +51,7 @@ module.exports = {
       }
     },
     backgroundImage: {
-      'home-top': "url('/assets/img/img_accueil_omees.png')"
+      'hero-bg': "url('/assets/images/hero-bg.png')",
     }
   },
   plugins: [],

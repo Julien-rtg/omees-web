@@ -1,11 +1,11 @@
-<div class="p-4 font-filson-pro flex flex-wrap items-center sticky top-0 bg-primary-pink-900 z-50">
+<div class="p-4 flex flex-wrap items-center sticky top-0 bg-primary-pink-900 z-50">
     <div class="flex items-center">
-        <img routerLink="/" src="\assets\img\logo_carre_blanc.svg" alt="logo omees" class="h-10 pl-4">
+        <img routerLink="/" src="\assets\img\logo_carre_blanc.svg" alt="logo omees" width="50" height="50">
     </div>
 
     <!-- Mobile menu button -->
-    <button (click)="toggleMenu()" class="ml-auto md:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-secondary-yellow-900 hover:border-secondary-yellow-900">
-        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <button (click)="toggleMenu()" class="ml-auto md:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-secondary-yellow-600 hover:border-primary-pink-900">
+        <svg class="fill-white h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
         </svg>
@@ -13,21 +13,21 @@
 
     <!-- Desktop menu -->
     <nav class="hidden md:flex gap-4 ml-auto font-bold text-white">
-        <a class="hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Home</a>
-        <a class="hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
-        <a class="hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
-        <a class="hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/our-services" routerLinkActive="active" ariaCurrentWhenActive="page">Nos services</a>     
-        <!--<a class="text-primary-pink-900 hover:text-primary-pink-700 transition-colors duration-200" routerLink="/connexion" routerLinkActive="active" ariaCurrentWhenActive="page">Connexion</a>-->
+        <a class="hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Home</a>
+        <a class="hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+        <a class="hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+        <a class="hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/our-services" routerLinkActive="active" ariaCurrentWhenActive="page">Nos services</a>     
+        <!-- <a class="text-secondary-yellow-600 hover:text-primary-pink-700 transition-colors duration-200" routerLink="/connexion" routerLinkActive="active" ariaCurrentWhenActive="page">Connexion</a> -->
     </nav>
 
     <!-- Mobile menu (hidden by default) -->
-    <div [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="w-full md:hidden">
+    <div [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="w-full md:hidden text-white">
         <nav class="flex flex-col gap-2 mt-4 font-bold text-white">
-            <a class="py-2 hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" (click)="toggleMenu()">Home</a>
-            <a class="py-2 hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">Contact</a>
-            <a class="py-2 hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">About Us</a>
-            <a class="py-2 hover:text-secondary-yellow-900 transition-colors duration-200" routerLink="/our-services" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">Nos services</a>     
-            <!--<a class="py-2 text-primary-pink-900 hover:text-primary-pink-700 transition-colors duration-200" routerLink="/connexion" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">Connexion</a>-->
+            <a class="py-2 hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" (click)="toggleMenu()">Home</a>
+            <a class="py-2 hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">Contact</a>
+            <a class="py-2 hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">About Us</a>
+            <a class="py-2 hover:text-secondary-yellow-600 transition-colors duration-200" routerLink="/our-services" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">Nos services</a>     
+            <!-- <a class="py-2 text-secondary-yellow-600 hover:text-primary-pink-700 transition-colors duration-200" routerLink="/connexion" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="toggleMenu()">Connexion</a> -->
         </nav>
     </div>
 </div>
